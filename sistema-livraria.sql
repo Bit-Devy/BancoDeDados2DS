@@ -26,3 +26,6 @@ INSERT INTO Compras VALUES
 -- Consultas solicitadas
 SELECT * FROM Clientes;
 SELECT * FROM Compras;
+SELECT Clientes.nomeCliente, Compras.NomeLivro
+FROM Compras
+INNER JOIN Clientes ON Compras.ClienteID = Clientes.ID;
